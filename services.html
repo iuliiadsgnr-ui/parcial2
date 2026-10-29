@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Services &amp; Rates — Bento Noir</title>
+  <meta name="description" content="Bespoke static sites, high-converting landings and UI systems. Three transparent tiers, a feature matrix and add-ons, priced up front.">
+  <meta name="theme-color" content="#F4F1EA">
+
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/services.js" defer></script>
+</head>
+
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <canvas id="canvas-cursor" aria-hidden="true"></canvas>
+
+  <!-- ===================== HEADER (shared) ===================== -->
+  <header class="site-header">
+    <nav class="nav" data-glow data-tone="light" aria-label="Primary">
+      <a class="nav__brand" href="index.html" aria-label="Bento Noir — home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <span>Bento Noir</span>
+      </a>
+
+      <ul class="nav__links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html" aria-current="page">Services</a></li>
+        <li><a href="process.html">Process</a></li>
+        <li class="has-dropdown">
+          <button class="nav__trigger" type="button" aria-expanded="false" aria-controls="works-menu">
+            Works
+            <svg class="chevron" width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M2 3.75L5 6.75L8 3.75" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="dropdown" id="works-menu">
+            <ul>
+              <li><a href="works.html#noir-commerce"><span class="d-idx">01</span><span class="d-name">Noir commerce</span><span class="d-meta">E-commerce</span></a></li>
+              <li><a href="works.html#brutal-portfolio"><span class="d-idx">02</span><span class="d-name">Brutal portfolio</span><span class="d-meta">Architecture</span></a></li>
+              <li><a href="works.html#editorial-journal"><span class="d-idx">03</span><span class="d-name">Editorial journal</span><span class="d-meta">Publication</span></a></li>
+              <li><a href="works.html#studio-index"><span class="d-idx">04</span><span class="d-name">Studio index</span><span class="d-meta">Internal tool</span></a></li>
+            </ul>
+            <a class="dropdown__all" href="works.html"><span>View all works</span><span aria-hidden="true">→</span></a>
+          </div>
+        </li>
+      </ul>
+
+      <a class="nav__cta" href="works.html#start" data-magnetic="0.22">Start</a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu"><span></span><span></span></button>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ===================== PAGE HERO ===================== -->
+    <section class="section page-hero" aria-labelledby="page-title">
+      <div class="wrap">
+        <div class="guides" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+        <div class="page-hero__grid">
+          <div class="page-hero__index" data-reveal style="--d: 300ms">
+            <p class="tag"><span class="idx">[S]</span> Services &amp; Rates</p>
+            <p class="tag">Fixed scope · Fixed price · USD</p>
+          </div>
+          <div class="page-hero__aside" data-reveal style="--d: 450ms">
+            <p class="lede">Three ways to work with us, priced up front. Every tier gets the same senior team and the same standard of craft. The difference is scope, never care.</p>
+          </div>
+          <h1 class="display page-hero__title" id="page-title" data-lines style="--d: 150ms">
+            <span class="line"><span class="line__inner" style="--i:0">Three ways to work.</span></span>
+            <span class="line"><span class="line__inner" style="--i:1"><span class="accent">One standard</span> of craft.</span></span>
+          </h1>
+          <div class="page-hero__meta" data-reveal style="--d: 600ms">
+            <ul class="page-hero__meta-list tag">
+              <li><a href="#areas">01 Service areas</a></li>
+              <li><a href="#rates">02 Rates</a></li>
+              <li><a href="#compare">03 Compare</a></li>
+              <li><a href="#addons">04 Add-ons</a></li>
+            </ul>
+            <span class="tag" style="display:inline-flex;align-items:center;gap:10px">
+              <span class="status-dot" data-live aria-hidden="true"></span>
+              <span data-studio="status">Status: Open for projects</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 01 · SERVICE AREAS ===================== -->
+    <section class="section" id="areas" aria-labelledby="areas-title" style="padding-top: 0">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="tag section-head__index" data-reveal><span class="idx">[S.01]</span> Service areas</p>
+          <h2 class="h2 section-head__title" id="areas-title" data-lines>
+            <span class="line"><span class="line__inner">What we build.</span></span>
+          </h2>
+        </div>
+
+        <div class="bento areas" data-reveal="expand">
+          <article class="area">
+            <div class="area__top">
+              <span class="tag">01</span>
+              <span class="area__icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="2.5" y="3.5" width="15" height="13" rx="1.5" stroke="currentColor" stroke-width="1.2"/><path d="M2.5 7h15M8 7v9.5" stroke="currentColor" stroke-width="1.2"/></svg>
+              </span>
+            </div>
+            <h3 class="h3">Bespoke Static Sites</h3>
+            <p class="body-s">Multi-page flagship sites for studios, brands and founders: fast, accessible and impossible to mistake for anyone else.</p>
+            <ul class="spec-list">
+              <li><span>Pages</span><span>4–12</span></li>
+              <li><span>Stack</span><span>HTML · CSS · JS</span></li>
+              <li><span>Hosting</span><span>Netlify · Vercel · Cloudflare</span></li>
+              <li><span>Typical</span><span>3–4 weeks</span></li>
+            </ul>
+          </article>
+          <article class="area">
+            <div class="area__top">
+              <span class="tag">02</span>
+              <span class="area__icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 15.5 8 10l3 3 6-7.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M13 5.5h4v4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
+            <h3 class="h3">High-Converting Landings</h3>
+            <p class="body-s">Single-purpose pages for launches, waitlists and campaigns. One story, one action, measured from the first visit.</p>
+            <ul class="spec-list">
+              <li><span>Sections</span><span>6–10</span></li>
+              <li><span>Focus</span><span>Conversion &amp; speed</span></li>
+              <li><span>Analytics</span><span>Plausible · GA4</span></li>
+              <li><span>Typical</span><span>2 weeks</span></li>
+            </ul>
+          </article>
+          <article class="area">
+            <div class="area__top">
+              <span class="tag">03</span>
+              <span class="area__icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="2.5" y="2.5" width="6.5" height="6.5" rx="1.2" stroke="currentColor" stroke-width="1.2"/><rect x="11" y="2.5" width="6.5" height="6.5" rx="3.25" stroke="currentColor" stroke-width="1.2"/><rect x="2.5" y="11" width="6.5" height="6.5" rx="1.2" stroke="currentColor" stroke-width="1.2"/><path d="M11 14.25h6.5M14.25 11v6.5" stroke="currentColor" stroke-width="1.2"/></svg>
+              </span>
+            </div>
+            <h3 class="h3">UI Systems</h3>
+            <p class="body-s">Design tokens, components and documentation that let your team ship new pages without diluting the brand.</p>
+            <ul class="spec-list">
+              <li><span>Components</span><span>20–60</span></li>
+              <li><span>Source</span><span>Figma + code</span></li>
+              <li><span>Docs</span><span>Living style guide</span></li>
+              <li><span>Typical</span><span>3–4 weeks</span></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 02 · RATES ===================== -->
+    <section class="section" id="rates" aria-labelledby="rates-title" style="padding-top: 0">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="tag section-head__index" data-reveal><span class="idx">[S.02]</span> Rates</p>
+          <div class="section-head__title">
+            <h2 class="h2" id="rates-title" data-lines>
+              <span class="line"><span class="line__inner">Transparent rates.</span></span>
+            </h2>
+            <p class="lede" data-reveal style="--d:150ms; margin-top: 20px">Fixed prices in USD. 50% to start, 50% at handover. We invoice through Wise or Stripe, so clients anywhere can pay in a couple of clicks.</p>
+          </div>
+        </div>
+
+        <div class="tiers">
+          <article class="tier" data-reveal>
+            <div class="tier__head">
+              <div>
+                <p class="tag">Tier 01</p>
+                <h3 class="h3">Essential</h3>
+              </div>
+            </div>
+            <div class="tier__price"><span>From</span><strong>$4,800</strong></div>
+            <p class="tier__desc">A focused landing or compact site, art-directed from scratch and built to convert.</p>
+            <ul class="tier__features">
+              <li>1 landing or up to 2 pages</li>
+              <li>Art direction &amp; visual mood</li>
+              <li>Responsive on 3 breakpoints</li>
+              <li>Scroll reveals &amp; micro-interactions</li>
+              <li>2 revision rounds</li>
+              <li>14 days post-launch support</li>
+            </ul>
+            <div class="tier__meta"><span>Timeline <b>2 weeks</b></span><span>Pages <b>1–2</b></span></div>
+            <a class="btn btn--ghost btn--block" href="works.html?tier=essential#start" data-magnetic="0.15">
+              <span class="btn__label">Choose Essential</span><span class="btn__dot" aria-hidden="true"></span>
+            </a>
+          </article>
+
+          <article class="tier is-inverse" data-reveal style="--d: 120ms">
+            <div class="tier__head">
+              <div>
+                <p class="tag">Tier 02</p>
+                <h3 class="h3">Boutique</h3>
+              </div>
+              <span class="tier__badge"><span class="status-dot" aria-hidden="true"></span>Most chosen</span>
+            </div>
+            <div class="tier__price"><span>From</span><strong>$9,500</strong></div>
+            <p class="tier__desc">The full digital booklet: a multi-page flagship site with bespoke motion and a reusable system.</p>
+            <ul class="tier__features">
+              <li>Up to 4 pages</li>
+              <li>Art direction + full type system</li>
+              <li>Bespoke animation choreography</li>
+              <li>Design tokens &amp; component library</li>
+              <li>3 revision rounds</li>
+              <li>30 days post-launch support</li>
+            </ul>
+            <div class="tier__meta"><span>Timeline <b>3 weeks</b></span><span>Pages <b>≤ 4</b></span></div>
+            <a class="btn btn--solid btn--block" href="works.html?tier=boutique#start" data-magnetic="0.15">
+              <span class="btn__label">Choose Boutique</span>
+              <span class="btn__icon" aria-hidden="true">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 9L9 3M9 3H4M9 3V8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 9L9 3M9 3H4M9 3V8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </a>
+          </article>
+
+          <article class="tier" data-reveal style="--d: 240ms">
+            <div class="tier__head">
+              <div>
+                <p class="tag">Tier 03</p>
+                <h3 class="h3">Custom</h3>
+              </div>
+            </div>
+            <div class="tier__price"><span>From</span><strong>$16,000</strong></div>
+            <p class="tier__desc">For products, platforms and UI systems that need a longer runway and sprint-based delivery.</p>
+            <ul class="tier__features">
+              <li>Pages scoped per sprint</li>
+              <li>Full UI system + documentation</li>
+              <li>WebGL / shader-ready architecture</li>
+              <li>Multilingual &amp; CMS integrations</li>
+              <li>Rolling revisions per sprint</li>
+              <li>90 days support + care plan option</li>
+            </ul>
+            <div class="tier__meta"><span>Timeline <b>4+ weeks</b></span><span>Pages <b>Open</b></span></div>
+            <a class="btn btn--ghost btn--block" href="works.html?tier=custom#start" data-magnetic="0.15">
+              <span class="btn__label">Choose Custom</span><span class="btn__dot" aria-hidden="true"></span>
+            </a>
+          </article>
+        </div>
+
+        <div class="tiers__note tag" data-reveal>
+          <span>Prices exclude taxes where applicable · Quotes valid for 30 days</span>
+          <a class="link-arrow" href="works.html#start">Need something in between? Ask <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 03 · MATRIX ===================== -->
+    <section class="section" id="compare" aria-labelledby="compare-title" style="padding-top: 0">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="tag section-head__index" data-reveal><span class="idx">[S.03]</span> Compare</p>
+          <h2 class="h2 section-head__title" id="compare-title" data-lines>
+            <span class="line"><span class="line__inner">Side by side.</span></span>
+          </h2>
+          <p class="tag section-head__meta" data-reveal>Scroll the table → on mobile</p>
+        </div>
+
+        <div class="matrix-wrap" data-reveal="expand" tabindex="0" role="region" aria-labelledby="compare-title">
+          <table class="matrix">
+            <caption class="visually-hidden">Feature comparison of the Essential, Boutique and Custom tiers</caption>
+            <thead>
+              <tr>
+                <th scope="col"><span class="tag">Feature</span></th>
+                <th scope="col"><span class="tag">$4,800+</span><span class="h4">Essential</span></th>
+                <th scope="col" class="is-featured"><span class="tag">$9,500+</span><span class="h4">Boutique</span></th>
+                <th scope="col"><span class="tag">$16,000+</span><span class="h4">Custom</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="group"><th scope="rowgroup" colspan="4">Deliverables</th></tr>
+              <tr><th scope="row">Pages included</th><td>1–2</td><td class="is-featured">Up to 4</td><td>Scoped per sprint</td></tr>
+              <tr><th scope="row">Art direction &amp; mood page</th><td><span class="yes" aria-label="Included">✓</span></td><td class="is-featured"><span class="yes" aria-label="Included">✓</span></td><td><span class="yes" aria-label="Included">✓</span></td></tr>
+              <tr><th scope="row">Type system</th><td>Core scale</td><td class="is-featured">Full system</td><td>Full system + variable fonts</td></tr>
+              <tr><th scope="row">Copy editing</th><td><span class="no" aria-label="Not included">–</span></td><td class="is-featured">Light edit</td><td>Included</td></tr>
+
+              <tr class="group"><th scope="rowgroup" colspan="4">Components &amp; motion</th></tr>
+              <tr><th scope="row">Design tokens</th><td><span class="no" aria-label="Not included">–</span></td><td class="is-featured"><span class="yes" aria-label="Included">✓</span></td><td><span class="yes" aria-label="Included">✓</span></td></tr>
+              <tr><th scope="row">Component library</th><td><span class="no" aria-label="Not included">–</span></td><td class="is-featured">12–20 components</td><td>40+ components</td></tr>
+              <tr><th scope="row">Interactive motion</th><td>Scroll reveals</td><td class="is-featured">Bespoke choreography</td><td>Bespoke + WebGL-ready</td></tr>
+              <tr><th scope="row">Cursor &amp; canvas effects</th><td><span class="no" aria-label="Not included">–</span></td><td class="is-featured"><span class="yes" aria-label="Included">✓</span></td><td><span class="yes" aria-label="Included">✓</span></td></tr>
+
+              <tr class="group"><th scope="rowgroup" colspan="4">Responsiveness &amp; performance</th></tr>
+              <tr><th scope="row">Breakpoints</th><td>3 fixed</td><td class="is-featured">4 + fluid type</td><td>Fully fluid</td></tr>
+              <tr><th scope="row">Lighthouse target</th><td>90+</td><td class="is-featured">95+</td><td>98+</td></tr>
+              <tr><th scope="row">Accessibility</th><td>WCAG 2.2 AA basics</td><td class="is-featured">WCAG 2.2 AA</td><td>WCAG 2.2 AA, audited</td></tr>
+
+              <tr class="group"><th scope="rowgroup" colspan="4">Support &amp; handover</th></tr>
+              <tr><th scope="row">Revision rounds</th><td>2</td><td class="is-featured">3</td><td>Per sprint</td></tr>
+              <tr><th scope="row">Post-launch support</th><td>14 days</td><td class="is-featured">30 days</td><td>90 days</td></tr>
+              <tr><th scope="row">Handover</th><td>Code + notes</td><td class="is-featured">Code + docs + call</td><td>Code + docs + team training</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 04 · ADD-ONS & ESTIMATOR ===================== -->
+    <section class="section" id="addons" aria-labelledby="addons-title" style="padding-top: 0">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="tag section-head__index" data-reveal><span class="idx">[S.04]</span> Add-ons</p>
+          <div class="section-head__title">
+            <h2 class="h2" id="addons-title" data-lines>
+              <span class="line"><span class="line__inner">Build your scope.</span></span>
+            </h2>
+            <p class="lede" data-reveal style="--d:150ms; margin-top: 20px">Pick a tier, toggle the extras you need and see a live estimate. Send it over and we'll confirm the final scope in writing.</p>
+          </div>
+        </div>
+
+        <div class="estimator">
+          <div class="addons" data-reveal="expand">
+            <button class="addon" type="button" aria-pressed="false" data-addon="shader" data-price="2400" data-weeks="0.5">
+              <span class="addon__top"><span class="tag">A.01</span><span class="addon__check" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5.2 4 7.2 8 3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+              <span class="h4">Interactive WebGL shader</span>
+              <span class="addon__desc">A custom GLSL piece for your hero or media nodes, tuned to 60 FPS with a static fallback.</span>
+              <span class="addon__price">+ $2,400</span>
+            </button>
+            <button class="addon" type="button" aria-pressed="false" data-addon="scroll" data-price="1800" data-weeks="0.5">
+              <span class="addon__top"><span class="tag">A.02</span><span class="addon__check" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5.2 4 7.2 8 3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+              <span class="h4">Complex scroll choreography</span>
+              <span class="addon__desc">Pinned sequences, scrubbed timelines and stacking narratives like our Selected Works.</span>
+              <span class="addon__price">+ $1,800</span>
+            </button>
+            <button class="addon" type="button" aria-pressed="false" data-addon="page" data-price="900" data-weeks="0.25">
+              <span class="addon__top"><span class="tag">A.03</span><span class="addon__check" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5.2 4 7.2 8 3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+              <span class="h4">Additional page</span>
+              <span class="addon__desc">One more art-directed page, built on the same system and component set.</span>
+              <span class="addon__price">+ $900</span>
+            </button>
+            <button class="addon" type="button" aria-pressed="false" data-addon="copy" data-price="1200" data-weeks="0">
+              <span class="addon__top"><span class="tag">A.04</span><span class="addon__check" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5.2 4 7.2 8 3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+              <span class="h4">Copywriting</span>
+              <span class="addon__desc">Positioning and page copy in English, written with your founders in two workshops.</span>
+              <span class="addon__price">+ $1,200</span>
+            </button>
+            <button class="addon" type="button" aria-pressed="false" data-addon="i18n" data-price="1100" data-weeks="0.5">
+              <span class="addon__top"><span class="tag">A.05</span><span class="addon__check" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5.2 4 7.2 8 3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+              <span class="h4">Multilingual EN / ES</span>
+              <span class="addon__desc">A second language with localized typography, URLs and metadata.</span>
+              <span class="addon__price">+ $1,100</span>
+            </button>
+            <button class="addon" type="button" aria-pressed="false" data-addon="care" data-price="1140" data-weeks="0">
+              <span class="addon__top"><span class="tag">A.06</span><span class="addon__check" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5.2 4 7.2 8 3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+              <span class="h4">Care plan · 3 months</span>
+              <span class="addon__desc">Monthly updates, uptime monitoring and small edits after launch ($380 / month).</span>
+              <span class="addon__price">+ $1,140</span>
+            </button>
+          </div>
+
+          <aside class="summary is-inverse" aria-labelledby="summary-title" data-reveal style="--d: 150ms">
+            <div>
+              <p class="tag">Live estimate</p>
+              <h3 class="h3" id="summary-title" style="margin-top:6px">Your scope</h3>
+            </div>
+            <div class="segmented" role="radiogroup" aria-label="Tier">
+              <button type="button" role="radio" aria-checked="false" data-tier="essential">Essential</button>
+              <button type="button" role="radio" aria-checked="true" data-tier="boutique">Boutique</button>
+              <button type="button" role="radio" aria-checked="false" data-tier="custom">Custom</button>
+            </div>
+            <ul class="summary__lines" data-summary-lines aria-live="polite"></ul>
+            <div class="summary__total">
+              <span class="tag">From</span>
+              <strong data-summary-total>$9,500</strong>
+            </div>
+            <p class="tag" data-summary-weeks>Estimated timeline · 3 weeks</p>
+            <a class="btn btn--solid btn--block" href="works.html?tier=boutique#start" data-summary-cta data-magnetic="0.15">
+              <span class="btn__label">Request this scope</span>
+              <span class="btn__icon" aria-hidden="true">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 9L9 3M9 3H4M9 3V8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 9L9 3M9 3H4M9 3V8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </a>
+            <p class="body-s" style="font-size:0.75rem">Estimate only. Final scope and price are confirmed in writing within 48 hours.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CLOSING CTA (dark sheet) ===================== -->
+    <section class="section section--sheet cta" data-theme="dark" aria-labelledby="cta-title">
+      <div class="cta__glow" aria-hidden="true"></div>
+      <div class="wrap cta__inner">
+        <p class="status-chip tag" data-reveal>
+          <span class="status-dot" data-live aria-hidden="true"></span>
+          <span data-studio="status">Status: Open for projects</span>
+        </p>
+        <h2 class="cta__title" id="cta-title" data-lines>
+          <span class="line"><span class="line__inner" style="--i:0">Ready to cut the noise.</span></span>
+          <span class="line"><span class="line__inner" style="--i:1">Start the fight.</span></span>
+        </h2>
+        <p class="cta__lede" data-reveal style="--d: 200ms">Tell us what you're building. You'll get a written scope, a fixed price and a start date within 48 hours.</p>
+        <div class="cta__actions" data-reveal style="--d: 300ms">
+          <a class="btn btn--solid" href="works.html#start" data-magnetic="0.3">
+            <span class="btn__label">Start a Project</span>
+            <span class="btn__icon" aria-hidden="true">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 9L9 3M9 3H4M9 3V8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 9L9 3M9 3H4M9 3V8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </a>
+          <a class="btn btn--ghost" href="works.html#start" data-studio="mailto" data-subject="Intro call — Bento Noir" data-magnetic="0.3">
+            <span class="btn__label">Book a Call</span>
+            <span class="btn__dot" aria-hidden="true"></span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER (shared) ===================== -->
+  <footer class="section site-footer" data-theme="dark">
+    <div class="wrap">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a class="nav__brand" href="index.html" aria-label="Bento Noir — home">
+            <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+            <span>Bento Noir</span>
+          </a>
+          <p>Boutique web design &amp; interface studio. Bespoke static sites, landings and UI systems, built without templates.</p>
+          <span class="tag" style="display:inline-flex;align-items:center;gap:10px">
+            <span class="status-dot" data-live aria-hidden="true"></span>
+            <span data-studio="status-short">Open for projects</span>
+          </span>
+        </div>
+
+        <nav class="footer__col" aria-label="Pages">
+          <h3 class="tag">Pages</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html" aria-current="page">Services &amp; Rates</a></li>
+            <li><a href="process.html">Process &amp; Flow</a></li>
+            <li><a href="works.html">Works &amp; Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__col">
+          <h3 class="tag">Studio</h3>
+          <ul>
+            <li><a href="works.html#start">Start a project</a></li>
+            <li><a href="services.html#rates">Rates</a></li>
+            <li><a href="works.html#faq">FAQ</a></li>
+            <li><a href="#" data-studio="email">hello@bentonoir.studio</a></li>
+          </ul>
+        </div>
+
+        <form class="newsletter" data-newsletter data-endpoint="" novalidate>
+          <h3 class="tag">Newsletter</h3>
+          <p class="body-s">One dispatch a month on type, interaction and performance. No noise.</p>
+          <div class="newsletter__field">
+            <label class="visually-hidden" for="nl-email">Email address</label>
+            <input id="nl-email" type="email" name="email" placeholder="you@studio.com" autocomplete="email" required>
+            <button type="submit" aria-label="Subscribe">
+              <svg width="14" height="14" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 6h8M10 6 6.5 2.5M10 6 6.5 9.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+          <p class="form-note" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <div class="footer__wordmark" aria-hidden="true">Bento Noir</div>
+
+      <div class="footer__legal tag">
+        <span>© <span data-year>2026</span> Bento Noir Studio — Crafted by hand</span>
+        <ul>
+          <!-- TODO: point these at real legal pages -->
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Imprint</a></li>
+          <li><a href="#top">Back to top ↑</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

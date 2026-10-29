@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bento Noir — Bespoke Web Design Studio</title>
+  <meta name="description" content="Bento Noir is a boutique web design studio crafting high-performance static websites, landings and UI systems. No templates.">
+  <meta name="theme-color" content="#161817">
+
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/home.js" defer></script>
+</head>
+
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <canvas id="canvas-cursor" aria-hidden="true"></canvas>
+
+  <!-- ===================== HEADER (shared) ===================== -->
+  <header class="site-header">
+    <nav class="nav" data-glow data-tone="dark" aria-label="Primary">
+      <a class="nav__brand" href="index.html" aria-label="Bento Noir — home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <span>Bento Noir</span>
+      </a>
+
+      <ul class="nav__links" id="nav-links">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="process.html">Process</a></li>
+        <li class="has-dropdown">
+          <button class="nav__trigger" type="button" aria-expanded="false" aria-controls="works-menu">
+            Works
+            <svg class="chevron" width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M2 3.75L5 6.75L8 3.75" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="dropdown" id="works-menu">
+            <ul>
+              <li><a href="works.html#noir-commerce"><span class="d-idx">01</span><span class="d-name">Noir commerce</span><span class="d-meta">E-commerce</span></a></li>
+              <li><a href="works.html#brutal-portfolio"><span class="d-idx">02</span><span class="d-name">Brutal portfolio</span><span class="d-meta">Architecture</span></a></li>
+              <li><a href="works.html#editorial-journal"><span class="d-idx">03</span><span class="d-name">Editorial journal</span><span class="d-meta">Publication</span></a></li>
+              <li><a href="works.html#studio-index"><span class="d-idx">04</span><span class="d-name">Studio index</span><span class="d-meta">Internal tool</span></a></li>
+            </ul>
+            <a class="dropdown__all" href="works.html"><span>View all works</span><span aria-hidden="true">→</span></a>
+          </div>
+        </li>
+      </ul>
+
+      <a class="nav__cta" href="works.html#start" data-magnetic="0.22">Start</a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu"><span></span><span></span></button>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ===================== 01 · HERO (dark) ===================== -->
+    <section class="section hero" data-theme="dark" aria-labelledby="hero-title">
+      <div class="wrap">
+        <div class="guides" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+
+        <div class="hero__grid">
+          <div class="hero__index" data-reveal style="--d: 500ms">
+            <p class="tag"><span class="idx">[01]</span> 28° LATAM / Global craft</p>
+            <p class="tag">Remote — US · CA · EU · LATAM</p>
+          </div>
+
+          <figure class="hero__media" data-glow data-reveal="expand" style="--d: 150ms">
+            <div class="media__stage" data-media-slot>
+              <!-- Future: mount a <canvas> shader or <video> showreel here -->
+              <div class="media__glow"></div>
+              <div class="media__grid"></div>
+              <div class="media__spot"></div>
+            </div>
+            <span class="media__label media__label--tl">[ Media node · 01 ]</span>
+            <span class="media__label media__label--tr">Shader / Showreel — reserved</span>
+            <div class="media__center">
+              <button class="media__play" type="button" aria-label="Play showreel (coming soon)">
+                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" aria-hidden="true"><path d="M13 8L1 15V1L13 8Z" fill="currentColor"/></svg>
+              </button>
+              <span class="media__caption">Reel 2026 — in production</span>
+            </div>
+            <span class="media__label media__label--bl">00:00 / 01:24</span>
+            <span class="media__label media__label--br">WebGL · 60 FPS</span>
+            <figcaption class="visually-hidden">Reserved space for the studio showreel and interactive shader.</figcaption>
+          </figure>
+
+          <div class="hero__intro" data-reveal style="--d: 650ms">
+            <p class="tag"><span class="idx">—</span> Studio note</p>
+            <p>We design and hand-code high-performance static websites for founders and premium brands that refuse to look like a template. Art direction, typography and interaction are resolved as one decision, then shipped as fast, durable code.</p>
+          </div>
+
+          <div class="hero__vertical" data-reveal style="--d: 800ms">
+            <span class="tag">Editorial interaction &amp; bespoke code</span>
+          </div>
+
+          <div class="hero__est" data-reveal style="--d: 850ms">
+            <p class="tag">Est. 2026 · No templates</p>
+          </div>
+
+          <div class="hero__foot">
+            <div class="hero__headline">
+              <h1 class="display hero__title" id="hero-title" data-lines style="--d: 260ms">
+                <span class="line"><span class="line__inner" style="--i:0">Web design<sup aria-hidden="true">(BN—26)</sup></span></span>
+                <span class="line"><span class="line__inner" style="--i:1">stripped of noise.</span></span>
+                <span class="line"><span class="line__inner" style="--i:2">Crafted with <span class="accent">intent.</span></span></span>
+              </h1>
+
+              <div class="hero__actions" data-reveal style="--d: 700ms">
+                <a class="btn btn--solid" href="works.html" data-magnetic="0.3">
+                  <span class="btn__label">Explore Work</span>
+                  <span class="btn__icon" aria-hidden="true">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 9L9 3M9 3H4M9 3V8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 9L9 3M9 3H4M9 3V8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                </a>
+                <a class="btn btn--ghost" href="process.html" data-magnetic="0.3">
+                  <span class="btn__label">Our Method</span>
+                  <span class="btn__dot" aria-hidden="true"></span>
+                </a>
+              </div>
+            </div>
+
+            <div class="hero__status" data-reveal style="--d: 950ms">
+              <span class="status-chip tag">
+                <span class="status-dot" data-live aria-hidden="true"></span>
+                <span data-studio="status">Status: Open for projects</span>
+              </span>
+              <span class="tag hero__scroll"><i aria-hidden="true"></i> Scroll — 2–4 week sprints</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 02 · PHILOSOPHY (light sheet) ===================== -->
+    <section class="section section--sheet philosophy" id="philosophy" aria-labelledby="philo-title">
+      <div class="wrap philosophy__grid">
+        <div class="philosophy__copy">
+          <p class="tag" data-reveal><span class="idx">[02]</span> Philosophy — Manifesto v.26</p>
+
+          <h2 class="h2" id="philo-title" data-lines>
+            <span class="line"><span class="line__inner" style="--i:0">A studio built</span></span>
+            <span class="line"><span class="line__inner" style="--i:1">on sharp edges.</span></span>
+          </h2>
+
+          <div class="philosophy__manifesto" data-reveal style="--d: 150ms">
+            <p>Most websites are assembled. Ours are authored. We start from your commercial goal and work backwards to every typographic and interactive decision, so nothing ships just because a template had a slot for it.</p>
+            <p>Small by design: four projects a quarter, one senior team from brief to handover, and code you fully own.</p>
+          </div>
+
+          <div class="pillars" data-reveal style="--d: 250ms">
+            <article class="pillar">
+              <span class="pillar__icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 3h14v8l-6 6H3V3Z" stroke="currentColor" stroke-width="1.2"/><path d="M11 17v-6h6" stroke="currentColor" stroke-width="1.2"/></svg>
+              </span>
+              <h3 class="h4">Brutal clarity</h3>
+              <p class="pillar__text">We remove until only the essential remains: one message per screen, one action per moment, zero decorative noise.</p>
+              <a class="link-arrow" href="process.html#method">How we strip back <span aria-hidden="true">→</span></a>
+            </article>
+            <article class="pillar">
+              <span class="pillar__icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M2 5.5h16M2 10h16M2 14.5h16" stroke="currentColor" stroke-width="1.2" stroke-dasharray="1.5 2"/><path d="M5 15.5 9 4.5h1.2l4 11M6.4 12h6.4" stroke="currentColor" stroke-width="1.2"/></svg>
+              </span>
+              <h3 class="h4">Editorial precision</h3>
+              <p class="pillar__text">Type scale, rhythm and whitespace set with the rigour of print, then given motion that serves reading instead of distracting from it.</p>
+              <a class="link-arrow" href="works.html#gallery">See the type in use <span aria-hidden="true">→</span></a>
+            </article>
+          </div>
+        </div>
+
+        <figure class="philosophy__visual" data-reveal="expand" data-media-slot aria-label="Type specimen: Satoshi display set against the studio baseline grid">
+          <div class="specimen">
+            <div class="specimen__baselines"></div>
+            <div class="specimen__meta specimen__meta--top">
+              <span>Satoshi — Display 500</span>
+              <span class="specimen__swatches" aria-hidden="true">
+                <i style="background:#F4F1EA"></i><i style="background:#161817"></i><i style="background:#586B5A"></i><i style="background:#7D8B7F"></i>
+              </span>
+            </div>
+            <div class="specimen__glyph" aria-hidden="true">
+              <span>A<em>a</em></span>
+              <i class="specimen__guide specimen__guide--cap"><span>Cap height</span></i>
+              <i class="specimen__guide specimen__guide--x"><span>x-height</span></i>
+              <i class="specimen__guide specimen__guide--base"><span>Baseline</span></i>
+            </div>
+            <div class="specimen__meta specimen__meta--bottom">
+              <span>Geist Mono 12 / 1.6</span>
+              <span>Tracking −0.04em</span>
+            </div>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===================== 03 · SELECTED WORKS (pinned stack) ===================== -->
+    <section class="section works-home" id="selected-works" aria-labelledby="works-title">
+      <div class="wrap works-home__grid">
+        <aside class="works-home__aside">
+          <p class="tag" data-reveal><span class="idx">[03]</span> Selected works</p>
+          <h2 class="h2" id="works-title" data-lines>
+            <span class="line"><span class="line__inner" style="--i:0">Selected</span></span>
+            <span class="line"><span class="line__inner" style="--i:1">works.</span></span>
+          </h2>
+          <p class="lede" data-reveal style="--d: 120ms">Four recent builds. Each one started from a blank canvas and a business problem, never from a theme.</p>
+
+          <div class="works-counter" data-reveal style="--d: 200ms" aria-hidden="true">
+            <span><span class="works-counter__now" data-works-now>01</span> / 04</span>
+            <span class="works-counter__bar"><i></i></span>
+          </div>
+
+          <ol class="works-list" data-reveal style="--d: 260ms">
+            <li class="is-active" data-works-item><span><span class="works-list__n">01</span>&nbsp;&nbsp;Noir commerce</span><span>E-commerce</span></li>
+            <li data-works-item><span><span class="works-list__n">02</span>&nbsp;&nbsp;Brutal portfolio</span><span>Architecture</span></li>
+            <li data-works-item><span><span class="works-list__n">03</span>&nbsp;&nbsp;Editorial journal</span><span>Publication</span></li>
+            <li data-works-item><span><span class="works-list__n">04</span>&nbsp;&nbsp;Studio index</span><span>Internal tool</span></li>
+          </ol>
+
+          <a class="link-arrow" href="works.html" data-reveal style="--d: 320ms">View all works <span aria-hidden="true">→</span></a>
+        </aside>
+
+        <div class="works-stack">
+          <!-- 01 -->
+          <article class="stack-card" style="--i:0" data-stack-card>
+            <div class="stack-card__inner is-inverse">
+              <div class="stack-card__visual" data-media-slot>
+                <div class="art art--noir" aria-hidden="true">
+                  <span class="art__word">NOIR</span>
+                  <div class="art__products"><i data-price="€ 380"></i><i data-price="€ 620"></i><i data-price="€ 240"></i></div>
+                  <span class="art__meta">SS27 — 03 / 48</span>
+                  <span class="art__meta art__meta--r">Checkout · 1 step</span>
+                </div>
+              </div>
+              <div class="stack-card__body">
+                <span class="stack-card__n">01</span>
+                <h3 class="stack-card__title">Noir commerce</h3>
+                <p class="stack-card__desc">A monochrome storefront for a ready-to-wear label: product-first grids, sub-second loading and a checkout with nothing in the way.</p>
+                <div class="stack-card__tags"><span class="pill-tag">E-commerce</span><span class="pill-tag">Art direction</span><span class="pill-tag">2026</span></div>
+                <a class="round-link stack-card__link" href="works.html#noir-commerce" aria-label="Open the Noir commerce case study">
+                  <svg width="14" height="14" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4M9 3V8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 02 -->
+          <article class="stack-card" style="--i:1" data-stack-card>
+            <div class="stack-card__inner">
+              <div class="stack-card__visual" data-media-slot>
+                <div class="art art--brutal" aria-hidden="true">
+                  <span class="art__grid"></span>
+                  <span class="art__plan"></span>
+                  <span class="art__word">BRVT</span>
+                  <span class="art__meta">Plan 1:200 · Concrete</span>
+                </div>
+              </div>
+              <div class="stack-card__body">
+                <span class="stack-card__n">02</span>
+                <h3 class="stack-card__title">Brutal portfolio</h3>
+                <p class="stack-card__desc">A raw, grid-exposed portfolio for an independent architect, built like a set of drawings: plans, sections and silence.</p>
+                <div class="stack-card__tags"><span class="pill-tag">Portfolio</span><span class="pill-tag">Brutalist grid</span><span class="pill-tag">2026</span></div>
+                <a class="round-link stack-card__link" href="works.html#brutal-portfolio" aria-label="Open the Brutal portfolio case study">
+                  <svg width="14" height="14" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4M9 3V8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 03 -->
+          <article class="stack-card" style="--i:2" data-stack-card>
+            <div class="stack-card__inner">
+              <div class="stack-card__visual" data-media-slot>
+                <div class="art art--editorial" aria-hidden="true">
+                  <span class="art__cap">E</span>
+                  <span class="art__head">On silence, margins and the weight of a single line.</span>
+                  <span class="art__rule"></span>
+                  <div class="art__cols"><i></i><i></i><i></i></div>
+                  <span class="art__meta">Issue 07 — Typography</span>
+                </div>
+              </div>
+              <div class="stack-card__body">
+                <span class="stack-card__n">03</span>
+                <h3 class="stack-card__title">Editorial journal</h3>
+                <p class="stack-card__desc">A typographic monograph series where long-form reading sets the pace, and motion only marks the turn of a page.</p>
+                <div class="stack-card__tags"><span class="pill-tag">Editorial</span><span class="pill-tag">Type system</span><span class="pill-tag">2025</span></div>
+                <a class="round-link stack-card__link" href="works.html#editorial-journal" aria-label="Open the Editorial journal case study">
+                  <svg width="14" height="14" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4M9 3V8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 04 -->
+          <article class="stack-card" style="--i:3" data-stack-card>
+            <div class="stack-card__inner is-inverse">
+              <div class="stack-card__visual" data-media-slot>
+                <div class="art art--index" aria-hidden="true">
+                  <div class="art__bar"><span>Studio index — v2.4</span><span>12 active</span></div>
+                  <div class="art__rows">
+                    <span><b>ID</b><b>Client</b><b>Stage</b><b>Status</b></span>
+                    <span><b>BN-041</b><b>Maison Arlet</b><b>Build</b><b class="live">Live</b></span>
+                    <span><b>BN-040</b><b>Atelier Ruiz</b><b>Handover</b><b>Done</b></span>
+                    <span><b>BN-039</b><b>Kiln &amp; Co.</b><b>Concept</b><b class="live">Live</b></span>
+                    <span><b>BN-038</b><b>Ostra Labs</b><b>Discovery</b><b>Queued</b></span>
+                    <span><b>BN-037</b><b>Halde Journal</b><b>Handover</b><b>Done</b></span>
+                  </div>
+                  <span class="art__prompt">&gt; index --filter=active <span class="cursor"></span></span>
+                </div>
+              </div>
+              <div class="stack-card__body">
+                <span class="stack-card__n">04</span>
+                <h3 class="stack-card__title">Studio index</h3>
+                <p class="stack-card__desc">A dark-mode operations index for a design collective: projects, invoices and capacity, readable at a glance.</p>
+                <div class="stack-card__tags"><span class="pill-tag">Product UI</span><span class="pill-tag">Dark mode</span><span class="pill-tag">2025</span></div>
+                <a class="round-link stack-card__link" href="works.html#studio-index" aria-label="Open the Studio index case study">
+                  <svg width="14" height="14" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4M9 3V8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 04 · CLOSING CTA (dark sheet) ===================== -->
+    <section class="section section--sheet cta" data-theme="dark" aria-labelledby="cta-title">
+      <div class="cta__glow" aria-hidden="true"></div>
+      <div class="wrap cta__inner">
+        <p class="status-chip tag" data-reveal>
+          <span class="status-dot" data-live aria-hidden="true"></span>
+          <span data-studio="status">Status: Open for projects</span>
+        </p>
+        <h2 class="cta__title" id="cta-title" data-lines>
+          <span class="line"><span class="line__inner" style="--i:0">Ready to cut the noise.</span></span>
+          <span class="line"><span class="line__inner" style="--i:1">Start the fight.</span></span>
+        </h2>
+        <p class="cta__lede" data-reveal style="--d: 200ms">Tell us what you're building. You'll get a written scope, a fixed price and a start date within 48 hours.</p>
+        <div class="cta__actions" data-reveal style="--d: 300ms">
+          <a class="btn btn--solid" href="works.html#start" data-magnetic="0.3">
+            <span class="btn__label">Start a Project</span>
+            <span class="btn__icon" aria-hidden="true">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 9L9 3M9 3H4M9 3V8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 9L9 3M9 3H4M9 3V8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </a>
+          <a class="btn btn--ghost" href="works.html#start" data-studio="mailto" data-subject="Intro call — Bento Noir" data-magnetic="0.3">
+            <span class="btn__label">Book a Call</span>
+            <span class="btn__dot" aria-hidden="true"></span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER (shared) ===================== -->
+  <footer class="section site-footer" data-theme="dark">
+    <div class="wrap">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a class="nav__brand" href="index.html" aria-label="Bento Noir — home">
+            <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+            <span>Bento Noir</span>
+          </a>
+          <p>Boutique web design &amp; interface studio. Bespoke static sites, landings and UI systems, built without templates.</p>
+          <span class="tag" style="display:inline-flex;align-items:center;gap:10px">
+            <span class="status-dot" data-live aria-hidden="true"></span>
+            <span data-studio="status-short">Open for projects</span>
+          </span>
+        </div>
+
+        <nav class="footer__col" aria-label="Pages">
+          <h3 class="tag">Pages</h3>
+          <ul>
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="services.html">Services &amp; Rates</a></li>
+            <li><a href="process.html">Process &amp; Flow</a></li>
+            <li><a href="works.html">Works &amp; Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__col">
+          <h3 class="tag">Studio</h3>
+          <ul>
+            <li><a href="works.html#start">Start a project</a></li>
+            <li><a href="services.html#rates">Rates</a></li>
+            <li><a href="works.html#faq">FAQ</a></li>
+            <li><a href="#" data-studio="email">hello@bentonoir.studio</a></li>
+          </ul>
+        </div>
+
+        <form class="newsletter" data-newsletter data-endpoint="" novalidate>
+          <h3 class="tag">Newsletter</h3>
+          <p class="body-s">One dispatch a month on type, interaction and performance. No noise.</p>
+          <div class="newsletter__field">
+            <label class="visually-hidden" for="nl-email">Email address</label>
+            <input id="nl-email" type="email" name="email" placeholder="you@studio.com" autocomplete="email" required>
+            <button type="submit" aria-label="Subscribe">
+              <svg width="14" height="14" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 6h8M10 6 6.5 2.5M10 6 6.5 9.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+          <p class="form-note" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <div class="footer__wordmark" aria-hidden="true">Bento Noir</div>
+
+      <div class="footer__legal tag">
+        <span>© <span data-year>2026</span> Bento Noir Studio — Crafted by hand</span>
+        <ul>
+          <!-- TODO: point these at real legal pages -->
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Imprint</a></li>
+          <li><a href="#top">Back to top ↑</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

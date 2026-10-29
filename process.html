@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Process &amp; Flow — Bento Noir</title>
+  <meta name="description" content="Four stages, no lo-fi wireframes: Discovery, Art Direction, Hero Core Concept and Full Build. Sprint plans, tech stack and revision rules.">
+  <meta name="theme-color" content="#F4F1EA">
+
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/process.js" defer></script>
+</head>
+
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <canvas id="canvas-cursor" aria-hidden="true"></canvas>
+
+  <!-- ===================== HEADER (shared) ===================== -->
+  <header class="site-header">
+    <nav class="nav" data-glow data-tone="light" aria-label="Primary">
+      <a class="nav__brand" href="index.html" aria-label="Bento Noir — home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <span>Bento Noir</span>
+      </a>
+
+      <ul class="nav__links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="process.html" aria-current="page">Process</a></li>
+        <li class="has-dropdown">
+          <button class="nav__trigger" type="button" aria-expanded="false" aria-controls="works-menu">
+            Works
+            <svg class="chevron" width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M2 3.75L5 6.75L8 3.75" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="dropdown" id="works-menu">
+            <ul>
+              <li><a href="works.html#noir-commerce"><span class="d-idx">01</span><span class="d-name">Noir commerce</span><span class="d-meta">E-commerce</span></a></li>
+              <li><a href="works.html#brutal-portfolio"><span class="d-idx">02</span><span class="d-name">Brutal portfolio</span><span class="d-meta">Architecture</span></a></li>
+              <li><a href="works.html#editorial-journal"><span class="d-idx">03</span><span class="d-name">Editorial journal</span><span class="d-meta">Publication</span></a></li>
+              <li><a href="works.html#studio-index"><span class="d-idx">04</span><span class="d-name">Studio index</span><span class="d-meta">Internal tool</span></a></li>
+            </ul>
+            <a class="dropdown__all" href="works.html"><span>View all works</span><span aria-hidden="true">→</span></a>
+          </div>
+        </li>
+      </ul>
+
+      <a class="nav__cta" href="works.html#start" data-magnetic="0.22">Start</a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu"><span></span><span></span></button>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ===================== PAGE HERO ===================== -->
+    <section class="section page-hero" aria-labelledby="page-title">
+      <div class="wrap">
+        <div class="guides" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+        <div class="page-hero__grid">
+          <div class="page-hero__index" data-reveal style="--d: 300ms">
+            <p class="tag"><span class="idx">[P]</span> Process &amp; Flow</p>
+            <p class="tag">4 stages · 2–4 weeks · 1 senior team</p>
+          </div>
+          <div class="page-hero__aside" data-reveal style="--d: 450ms">
+            <p class="lede">We skip lo-fi mock-ups. You react to real typography, real colour and real motion from week one. It's faster, and it's the only honest way to judge how something feels.</p>
+          </div>
+          <h1 class="display page-hero__title" id="page-title" data-lines style="--d: 150ms">
+            <span class="line"><span class="line__inner" style="--i:0">No wireframes.</span></span>
+            <span class="line"><span class="line__inner" style="--i:1">Straight to the <span class="accent">real thing.</span></span></span>
+          </h1>
+          <div class="page-hero__meta" data-reveal style="--d: 600ms">
+            <ul class="page-hero__meta-list tag">
+              <li><a href="#method">01 Method</a></li>
+              <li><a href="#sprints">02 Sprint plan</a></li>
+              <li><a href="#stack">03 Stack</a></li>
+              <li><a href="#revisions">04 Revisions</a></li>
+            </ul>
+            <span class="tag">Discovery → Direction → Concept → Build</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 01 · METHOD TIMELINE ===================== -->
+    <section class="section" id="method" aria-labelledby="method-title" style="padding-top: 0">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="tag section-head__index" data-reveal><span class="idx">[P.01]</span> Method</p>
+          <h2 class="h2 section-head__title" id="method-title" data-lines>
+            <span class="line"><span class="line__inner" style="--i:0">Four stages,</span></span>
+            <span class="line"><span class="line__inner" style="--i:1">zero guesswork.</span></span>
+          </h2>
+        </div>
+
+        <div class="timeline" data-timeline>
+          <div class="timeline__rail" aria-hidden="true"><i></i></div>
+          <ol>
+
+          <li class="step" data-step>
+            <span class="step__node" aria-hidden="true"></span>
+            <span class="step__n">01</span>
+            <div class="step__main" data-reveal>
+              <div class="step__when"><span class="pill-tag">Days 1–3</span><span class="pill-tag">Async + 1 call</span></div>
+              <h3 class="h3">Discovery &amp; Brief</h3>
+              <p class="body-s">We map business goals, audience and constraints before a single pixel: a 60-minute kickoff, a short questionnaire and a teardown of the sites you compete with.</p>
+              <ul class="spec-list">
+                <li><span>Kickoff call</span><span>60 min</span></li>
+                <li><span>Written brief</span><span>1 page</span></li>
+                <li><span>Success metrics</span><span>Agreed</span></li>
+                <li><span>Content inventory</span><span>Shared sheet</span></li>
+              </ul>
+            </div>
+            <div class="step__side" data-reveal style="--d: 120ms">
+              <div class="step__out"><p class="tag">You get</p><p>A one-page brief we both sign off. It becomes the yardstick for every later decision.</p></div>
+            </div>
+          </li>
+
+          <li class="step" data-step>
+            <span class="step__node" aria-hidden="true"></span>
+            <span class="step__n">02</span>
+            <div class="step__main" data-reveal>
+              <div class="step__when"><span class="pill-tag">Days 4–7</span><span class="pill-tag">1 review</span></div>
+              <h3 class="h3">Art Direction &amp; Visual Mood</h3>
+              <p class="body-s">We define the visual language: type pairing, palette, grid, motion principles and imagery direction, presented as a live mood page rather than a static PDF.</p>
+              <ul class="spec-list">
+                <li><span>Mood page</span><span>Live URL</span></li>
+                <li><span>Type system</span><span>Display + text</span></li>
+                <li><span>Colour tokens</span><span>60 / 30 / 10</span></li>
+                <li><span>Motion principles</span><span>Easing + timing</span></li>
+              </ul>
+            </div>
+            <div class="step__side" data-reveal style="--d: 120ms">
+              <div class="step__out"><p class="tag">You get</p><p>A browsable direction page. Pick, mix or push back in one consolidated round.</p></div>
+            </div>
+          </li>
+
+          <li class="step" data-step>
+            <span class="step__node" aria-hidden="true"></span>
+            <span class="step__n">03</span>
+            <div class="step__main" data-reveal>
+              <div class="step__when"><span class="pill-tag">Week 2</span><span class="pill-tag">1 review</span></div>
+              <h3 class="h3">Hero Core Concept</h3>
+              <p class="body-s">We design and build the hero in code at full fidelity. This is where the concept is proven: when the first screen is right, the rest follows.</p>
+              <ul class="spec-list">
+                <li><span>Coded hero</span><span>Full fidelity</span></li>
+                <li><span>Breakpoints</span><span>Desktop + mobile</span></li>
+                <li><span>Interaction</span><span>Working prototype</span></li>
+              </ul>
+            </div>
+            <div class="step__side" data-reveal style="--d: 120ms">
+              <div class="step__out"><p class="tag">You get</p><p>A live link to your hero. Approve it and the system is locked for the build.</p></div>
+            </div>
+          </li>
+
+          <li class="step" data-step>
+            <span class="step__node" aria-hidden="true"></span>
+            <span class="step__n">04</span>
+            <div class="step__main" data-reveal>
+              <div class="step__when"><span class="pill-tag">Weeks 2–4</span><span class="pill-tag">Final review</span></div>
+              <h3 class="h3">Full Build &amp; Technical Handover</h3>
+              <p class="body-s">We roll the system across every page, test on real devices, tune performance and hand over clean, documented code you own outright.</p>
+              <ul class="spec-list">
+                <li><span>All pages</span><span>Built + responsive</span></li>
+                <li><span>QA</span><span>12 real devices</span></li>
+                <li><span>Performance</span><span>Lighthouse report</span></li>
+                <li><span>Handover</span><span>Docs + call</span></li>
+              </ul>
+            </div>
+            <div class="step__side" data-reveal style="--d: 120ms">
+              <div class="step__out"><p class="tag">You get</p><p>Production code deployed to your host, the repository, and a recorded walkthrough.</p></div>
+            </div>
+          </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 02 · SPRINT PLAN ===================== -->
+    <section class="section" id="sprints" aria-labelledby="sprints-title" style="padding-top: 0">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="tag section-head__index" data-reveal><span class="idx">[P.02]</span> Sprint plan</p>
+          <div class="section-head__title">
+            <h2 class="h2" id="sprints-title" data-lines>
+              <span class="line"><span class="line__inner">Two to four weeks.</span></span>
+            </h2>
+            <p class="lede" data-reveal style="--d:150ms; margin-top: 20px">Typical schedules in working days. Reviews are fixed in the calendar from day one, so you always know when your input is needed.</p>
+          </div>
+        </div>
+
+        <div class="sprint" data-sprint data-reveal="expand">
+          <div class="sprint__bar">
+            <div class="sprint__tabs" role="tablist" aria-label="Tier schedule">
+              <button class="chip" type="button" role="tab" aria-selected="false" data-plan="essential">Essential · 2 wks</button>
+              <button class="chip" type="button" role="tab" aria-selected="true" data-plan="boutique">Boutique · 3 wks</button>
+              <button class="chip" type="button" role="tab" aria-selected="false" data-plan="custom">Custom · 4 wks</button>
+            </div>
+            <div class="sprint__legend tag">
+              <span><i aria-hidden="true"></i>Studio sprint</span>
+              <span><i class="is-review" aria-hidden="true"></i>Client review</span>
+            </div>
+          </div>
+          <div class="sprint__chart" role="tabpanel" data-sprint-chart aria-live="polite">
+            <noscript><p class="body-s">Essential: 2 weeks · Boutique: 3 weeks · Custom: 4+ weeks.</p></noscript>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 03 · STACK ===================== -->
+    <section class="section" id="stack" aria-labelledby="stack-title" style="padding-top: 0">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="tag section-head__index" data-reveal><span class="idx">[P.03]</span> Stack</p>
+          <h2 class="h2 section-head__title" id="stack-title" data-lines>
+            <span class="line"><span class="line__inner">Tools we trust.</span></span>
+          </h2>
+          <p class="tag section-head__meta" data-reveal>No page builders · No themes</p>
+        </div>
+
+        <div class="bento stack-grid" data-reveal="expand">
+          <article class="tool tool--wide">
+            <span class="tool__glyph" aria-hidden="true">Fg</span>
+            <h3 class="h4">Figma</h3>
+            <p class="tool__desc">The design source of truth. Tokens, components and the mood page live in one shared file you keep.</p>
+            <p class="tag tool__role">Design</p>
+          </article>
+          <article class="tool">
+            <span class="tool__glyph" aria-hidden="true">{ }</span>
+            <h3 class="h4">VS Code</h3>
+            <p class="tool__desc">Hand-written, linted and formatted code. Nothing generated, nothing bloated.</p>
+            <p class="tag tool__role">Build</p>
+          </article>
+          <article class="tool">
+            <span class="tool__glyph" aria-hidden="true">&lt;/&gt;</span>
+            <h3 class="h4">HTML5</h3>
+            <p class="tool__desc">Semantic, accessible markup: landmarks, headings and forms that work without JavaScript.</p>
+            <p class="tag tool__role">Structure</p>
+          </article>
+          <article class="tool">
+            <span class="tool__glyph" aria-hidden="true">#</span>
+            <h3 class="h4">CSS3</h3>
+            <p class="tool__desc">Grid, container queries, custom properties and fluid type. No framework required.</p>
+            <p class="tag tool__role">Style</p>
+          </article>
+          <article class="tool tool--wide">
+            <span class="tool__glyph" aria-hidden="true">JS</span>
+            <h3 class="h4">Vanilla JavaScript</h3>
+            <p class="tool__desc">Lightweight interaction on standard web APIs, with every animation on one frame loop.</p>
+<code><span class="c">// one loop, recycled particles, locked 60 fps</span>
+<span class="k">function</span> frame(now) {
+  update(pool, now); draw(ctx, pool);
+  <span class="k">if</span> (alive) requestAnimationFrame(frame);
+}</code>
+          </article>
+          <article class="tool">
+            <span class="tool__glyph" aria-hidden="true">Gl</span>
+            <h3 class="h4">WebGL / GLSL</h3>
+            <p class="tool__desc">An optional shader layer for hero media, always with a static fallback.</p>
+            <p class="tag tool__role">Add-on</p>
+          </article>
+          <article class="tool">
+            <span class="tool__glyph" aria-hidden="true">Git</span>
+            <h3 class="h4">Git + GitHub</h3>
+            <p class="tool__desc">Every change versioned. You own the repository from day one.</p>
+            <p class="tag tool__role">Versioning</p>
+          </article>
+          <article class="tool">
+            <span class="tool__glyph" aria-hidden="true">▲</span>
+            <h3 class="h4">Netlify · Vercel · Cloudflare</h3>
+            <p class="tool__desc">Static hosting on a global CDN, with a preview link for every review.</p>
+            <p class="tag tool__role">Deploy</p>
+          </article>
+          <article class="tool">
+            <span class="tool__glyph" aria-hidden="true">98</span>
+            <h3 class="h4">Lighthouse · WebPageTest</h3>
+            <p class="tool__desc">Performance budgets checked on every deploy, not just at launch.</p>
+            <p class="tag tool__role">Quality</p>
+          </article>
+          <article class="tool">
+            <span class="tool__glyph" aria-hidden="true">Pl</span>
+            <h3 class="h4">Plausible</h3>
+            <p class="tool__desc">Privacy-friendly analytics with no cookie banner needed.</p>
+            <p class="tag tool__role">Measure</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 04 · REVISIONS ===================== -->
+    <section class="section" id="revisions" aria-labelledby="rev-title" style="padding-top: 0">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="tag section-head__index" data-reveal><span class="idx">[P.04]</span> Revisions</p>
+          <h2 class="h2 section-head__title" id="rev-title" data-lines>
+            <span class="line"><span class="line__inner">Feedback, with rules.</span></span>
+          </h2>
+        </div>
+
+        <div class="revisions">
+          <ol class="rules">
+            <li class="rule-item" data-reveal>
+              <div><h3 class="h4">Consolidated rounds per stage</h3>
+              <p>Feedback arrives as one list per stage, from one decision-maker. It keeps momentum and avoids design by committee.</p></div>
+            </li>
+            <li class="rule-item" data-reveal>
+              <div><h3 class="h4">A 48-hour review window</h3>
+              <p>We reply within one working day; you have 48 hours to review each milestone. Longer pauses shift the schedule, never the quality.</p></div>
+            </li>
+            <li class="rule-item" data-reveal>
+              <div><h3 class="h4">Comments live on the work</h3>
+              <p>Notes go directly on the live preview or in Figma, so every comment has context and nothing gets lost in email threads.</p></div>
+            </li>
+            <li class="rule-item" data-reveal>
+              <div><h3 class="h4">Approved stays approved</h3>
+              <p>Once a stage is signed off, we build on it. Reopening an approved stage is scoped as new work, so the timeline stays honest.</p></div>
+            </li>
+            <li class="rule-item" data-reveal>
+              <div><h3 class="h4">Async first, calls when they matter</h3>
+              <p>A recorded walkthrough for every milestone; live calls for kickoff, hero review and handover.</p></div>
+            </li>
+          </ol>
+
+          <div class="scope-compare">
+            <div class="scope-card is-inverse" style="background: var(--c-ink)" data-reveal>
+              <p class="tag">Counts as a revision</p>
+              <ul>
+                <li>Copy and content tweaks</li>
+                <li>Colour, spacing or type adjustments</li>
+                <li>Reordering or removing sections</li>
+                <li>Swapping images or media</li>
+                <li>Motion timing and easing</li>
+              </ul>
+            </div>
+            <div class="scope-card is-light" data-reveal style="--d: 120ms">
+              <p class="tag">Counts as new scope</p>
+              <ul>
+                <li>New pages or sections</li>
+                <li>New features or integrations</li>
+                <li>Changing an approved direction</li>
+                <li>A rebrand mid-project</li>
+                <li>Additional languages</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CLOSING CTA (dark sheet) ===================== -->
+    <section class="section section--sheet cta" data-theme="dark" aria-labelledby="cta-title">
+      <div class="cta__glow" aria-hidden="true"></div>
+      <div class="wrap cta__inner">
+        <p class="status-chip tag" data-reveal>
+          <span class="status-dot" data-live aria-hidden="true"></span>
+          <span data-studio="status">Status: Open for projects</span>
+        </p>
+        <h2 class="cta__title" id="cta-title" data-lines>
+          <span class="line"><span class="line__inner" style="--i:0">Ready to cut the noise.</span></span>
+          <span class="line"><span class="line__inner" style="--i:1">Start the fight.</span></span>
+        </h2>
+        <p class="cta__lede" data-reveal style="--d: 200ms">Tell us what you're building. You'll get a written scope, a fixed price and a start date within 48 hours.</p>
+        <div class="cta__actions" data-reveal style="--d: 300ms">
+          <a class="btn btn--solid" href="works.html#start" data-magnetic="0.3">
+            <span class="btn__label">Start a Project</span>
+            <span class="btn__icon" aria-hidden="true">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 9L9 3M9 3H4M9 3V8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 9L9 3M9 3H4M9 3V8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </a>
+          <a class="btn btn--ghost" href="works.html#start" data-studio="mailto" data-subject="Intro call — Bento Noir" data-magnetic="0.3">
+            <span class="btn__label">Book a Call</span>
+            <span class="btn__dot" aria-hidden="true"></span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER (shared) ===================== -->
+  <footer class="section site-footer" data-theme="dark">
+    <div class="wrap">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a class="nav__brand" href="index.html" aria-label="Bento Noir — home">
+            <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+            <span>Bento Noir</span>
+          </a>
+          <p>Boutique web design &amp; interface studio. Bespoke static sites, landings and UI systems, built without templates.</p>
+          <span class="tag" style="display:inline-flex;align-items:center;gap:10px">
+            <span class="status-dot" data-live aria-hidden="true"></span>
+            <span data-studio="status-short">Open for projects</span>
+          </span>
+        </div>
+
+        <nav class="footer__col" aria-label="Pages">
+          <h3 class="tag">Pages</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services &amp; Rates</a></li>
+            <li><a href="process.html" aria-current="page">Process &amp; Flow</a></li>
+            <li><a href="works.html">Works &amp; Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__col">
+          <h3 class="tag">Studio</h3>
+          <ul>
+            <li><a href="works.html#start">Start a project</a></li>
+            <li><a href="services.html#rates">Rates</a></li>
+            <li><a href="works.html#faq">FAQ</a></li>
+            <li><a href="#" data-studio="email">hello@bentonoir.studio</a></li>
+          </ul>
+        </div>
+
+        <form class="newsletter" data-newsletter data-endpoint="" novalidate>
+          <h3 class="tag">Newsletter</h3>
+          <p class="body-s">One dispatch a month on type, interaction and performance. No noise.</p>
+          <div class="newsletter__field">
+            <label class="visually-hidden" for="nl-email">Email address</label>
+            <input id="nl-email" type="email" name="email" placeholder="you@studio.com" autocomplete="email" required>
+            <button type="submit" aria-label="Subscribe">
+              <svg width="14" height="14" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 6h8M10 6 6.5 2.5M10 6 6.5 9.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+          <p class="form-note" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <div class="footer__wordmark" aria-hidden="true">Bento Noir</div>
+
+      <div class="footer__legal tag">
+        <span>© <span data-year>2026</span> Bento Noir Studio — Crafted by hand</span>
+        <ul>
+          <!-- TODO: point these at real legal pages -->
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Imprint</a></li>
+          <li><a href="#top">Back to top ↑</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Works &amp; Contact — Bento Noir</title>
+  <meta name="description" content="Case studies, answers on international contracting and a guided onboarding form to start a project with Bento Noir.">
+  <meta name="theme-color" content="#F4F1EA">
+
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/works.js" defer></script>
+</head>
+
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <canvas id="canvas-cursor" aria-hidden="true"></canvas>
+
+  <!-- ===================== HEADER (shared) ===================== -->
+  <header class="site-header">
+    <nav class="nav" data-glow data-tone="light" aria-label="Primary">
+      <a class="nav__brand" href="index.html" aria-label="Bento Noir — home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <span>Bento Noir</span>
+      </a>
+
+      <ul class="nav__links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="process.html">Process</a></li>
+        <li class="has-dropdown">
+          <button class="nav__trigger" type="button" aria-current="page" aria-expanded="false" aria-controls="works-menu">
+            Works
+            <svg class="chevron" width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M2 3.75L5 6.75L8 3.75" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="dropdown" id="works-menu">
+            <ul>
+              <li><a href="works.html#noir-commerce"><span class="d-idx">01</span><span class="d-name">Noir commerce</span><span class="d-meta">E-commerce</span></a></li>
+              <li><a href="works.html#brutal-portfolio"><span class="d-idx">02</span><span class="d-name">Brutal portfolio</span><span class="d-meta">Architecture</span></a></li>
+              <li><a href="works.html#editorial-journal"><span class="d-idx">03</span><span class="d-name">Editorial journal</span><span class="d-meta">Publication</span></a></li>
+              <li><a href="works.html#studio-index"><span class="d-idx">04</span><span class="d-name">Studio index</span><span class="d-meta">Internal tool</span></a></li>
+            </ul>
+            <a class="dropdown__all" href="works.html"><span>View all works</span><span aria-hidden="true">→</span></a>
+          </div>
+        </li>
+      </ul>
+
+      <a class="nav__cta" href="works.html#start" data-magnetic="0.22">Start</a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu"><span></span><span></span></button>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ===================== PAGE HERO + AVAILABILITY ===================== -->
+    <section class="section page-hero" aria-labelledby="page-title">
+      <div class="wrap">
+        <div class="guides" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+        <div class="page-hero__grid">
+          <div class="page-hero__index" data-reveal style="--d: 300ms">
+            <p class="tag"><span class="idx">[W]</span> Works &amp; Contact</p>
+            <p class="tag">Index · FAQ · Onboarding</p>
+          </div>
+          <div class="page-hero__aside" data-reveal style="--d: 450ms">
+            <p class="lede">A curated index of recent builds, straight answers about working across borders, and a three-step brief to start your own.</p>
+          </div>
+          <h1 class="display page-hero__title" id="page-title" data-lines style="--d: 150ms">
+            <span class="line"><span class="line__inner" style="--i:0">Selected works.</span></span>
+            <span class="line"><span class="line__inner" style="--i:1">Built to be <span class="accent">remembered.</span></span></span>
+          </h1>
+        </div>
+
+        <div class="bento availability" style="margin-top: clamp(40px, 6vh, 64px)" data-reveal="expand" aria-label="Studio availability">
+          <div>
+            <span class="tag">Status</span>
+            <strong class="status-line"><span class="status-dot" data-live aria-hidden="true"></span><span data-studio="status-short">Open for projects</span></strong>
+          </div>
+          <div>
+            <span class="tag">Booking window</span>
+            <strong data-studio="window">Q4 · Q1 '27</strong>
+          </div>
+          <div>
+            <span class="tag">Next sprint starts</span>
+            <strong data-studio="next">Nov 16, 2026</strong>
+          </div>
+          <div>
+            <span class="tag">Slots left this window</span>
+            <strong data-studio="slots">2 of 4</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 01 · GALLERY ===================== -->
+    <section class="section" id="gallery" aria-labelledby="gallery-title" style="padding-top: 0">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="tag section-head__index" data-reveal><span class="idx">[W.01]</span> Index</p>
+          <h2 class="h2 section-head__title" id="gallery-title" data-lines>
+            <span class="line"><span class="line__inner">Case studies.</span></span>
+          </h2>
+        </div>
+
+        <div class="filters" data-reveal>
+          <div class="filters__chips" role="group" aria-label="Filter case studies" data-filters></div>
+          <p class="tag" aria-live="polite" data-filter-count></p>
+        </div>
+
+        <div class="gallery" data-gallery>
+          <noscript>
+            <p class="body-s">Noir commerce · Brutal portfolio · Editorial journal · Studio index · Quiet Room · Field Notes. Enable JavaScript to open the full case studies.</p>
+          </noscript>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 02 · FAQ ===================== -->
+    <section class="section" id="faq" aria-labelledby="faq-title" style="padding-top: 0">
+      <div class="wrap faq__grid">
+        <div class="faq__head">
+          <p class="tag" data-reveal><span class="idx">[W.02]</span> FAQ</p>
+          <h2 class="h2" id="faq-title" data-lines>
+            <span class="line"><span class="line__inner" style="--i:0">Working</span></span>
+            <span class="line"><span class="line__inner" style="--i:1">across borders.</span></span>
+          </h2>
+          <p class="lede" data-reveal style="--d:150ms">Contracts, payments, time zones and what you actually own at the end. Anything missing? <a class="link-arrow" href="#" data-studio="mailto" data-subject="Question for Bento Noir">Ask us <span aria-hidden="true">→</span></a></p>
+        </div>
+
+        <div class="faq__list" data-faq data-reveal>
+          <div class="faq-item">
+            <h3><button class="faq-item__q" type="button" aria-expanded="false"><span class="faq-item__n">01</span><span class="h4">Do you work with clients outside Latin America?</span><span class="faq-item__icon" aria-hidden="true"></span></button></h3>
+            <div class="faq-item__a"><div><p>Yes. Most of our clients are in the US, Canada and Europe. We work in English or Spanish, overlap four or more working hours with US time zones and three to five with Europe, and schedule every live call inside that overlap.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <h3><button class="faq-item__q" type="button" aria-expanded="false"><span class="faq-item__n">02</span><span class="h4">How do contracts and payments work internationally?</span><span class="faq-item__icon" aria-hidden="true"></span></button></h3>
+            <div class="faq-item__a"><div><p>We sign a plain-English services agreement before kickoff. Invoices are in USD (EUR on request) and paid through Wise or Stripe. Essential and Boutique are split 50% to start and 50% at handover; Custom projects are invoiced per sprint.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <h3><button class="faq-item__q" type="button" aria-expanded="false"><span class="faq-item__n">03</span><span class="h4">What exactly do we receive at handover?</span><span class="faq-item__icon" aria-hidden="true"></span></button></h3>
+            <div class="faq-item__a"><div><p>The full source code in a Git repository you own, deployed to your host; the Figma source file; documentation for tokens, components and content editing; and a recorded walkthrough of the codebase. There are no licences or lock-in.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <h3><button class="faq-item__q" type="button" aria-expanded="false"><span class="faq-item__n">04</span><span class="h4">Can we edit content ourselves after launch?</span><span class="faq-item__icon" aria-hidden="true"></span></button></h3>
+            <div class="faq-item__a"><div><p>Yes. Static sites can be edited directly in code, or we can connect a lightweight Git-based CMS so your team edits text and images in a simple dashboard. Boutique and Custom include a short training session.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <h3><button class="faq-item__q" type="button" aria-expanded="false"><span class="faq-item__n">05</span><span class="h4">Isn't skipping wireframes risky?</span><span class="faq-item__icon" aria-hidden="true"></span></button></h3>
+            <div class="faq-item__a"><div><p>We replace wireframes with the Hero Core Concept: a real, coded first screen you approve before we build the rest. It surfaces the same structural questions as a wireframe, earlier and at full fidelity, so nobody has to imagine the result.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <h3><button class="faq-item__q" type="button" aria-expanded="false"><span class="faq-item__n">06</span><span class="h4">What do you need from us before we start?</span><span class="faq-item__icon" aria-hidden="true"></span></button></h3>
+            <div class="faq-item__a"><div><p>One decision-maker, any existing brand assets, draft content (or the copywriting add-on), and access to your domain and hosting. We send a short checklist the day the contract is signed.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <h3><button class="faq-item__q" type="button" aria-expanded="false"><span class="faq-item__n">07</span><span class="h4">How far ahead do you book?</span><span class="faq-item__icon" aria-hidden="true"></span></button></h3>
+            <div class="faq-item__a"><div><p>Usually two to four weeks. We take four projects per quarter so every one gets senior attention; the availability panel at the top of this page always shows the next free start date.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <h3><button class="faq-item__q" type="button" aria-expanded="false"><span class="faq-item__n">08</span><span class="h4">What happens after launch?</span><span class="faq-item__icon" aria-hidden="true"></span></button></h3>
+            <div class="faq-item__a"><div><p>Every tier includes post-launch support for bugs and small edits: 14, 30 or 90 days depending on the tier. After that you can add a monthly care plan or book ad-hoc hours.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 03 · ONBOARDING (dark sheet) ===================== -->
+    <section class="section section--sheet onboard" id="start" data-theme="dark" aria-labelledby="start-title">
+      <div class="wrap onboard__grid">
+        <aside class="onboard__aside">
+          <p class="tag" data-reveal><span class="idx">[W.03]</span> Start a project</p>
+          <h2 class="h2" id="start-title" data-lines>
+            <span class="line"><span class="line__inner" style="--i:0">Ready to cut</span></span>
+            <span class="line"><span class="line__inner" style="--i:1">the noise?</span></span>
+          </h2>
+          <p class="lede" data-reveal style="--d:150ms">Three short steps. You'll get a written scope, a fixed price and a start date within 48 hours.</p>
+          <ol class="onboard__steps" data-reveal style="--d:250ms" aria-label="Form progress">
+            <li class="is-current" data-step-label><span class="n">01</span><span>About you</span><span class="mark" aria-hidden="true"></span></li>
+            <li data-step-label><span class="n">02</span><span>The project</span><span class="mark" aria-hidden="true"></span></li>
+            <li data-step-label><span class="n">03</span><span>Budget &amp; timing</span><span class="mark" aria-hidden="true"></span></li>
+          </ol>
+          <span class="tag" style="display:inline-flex;align-items:center;gap:10px;--d:300ms" data-reveal>
+            <span class="status-dot" data-live aria-hidden="true"></span>
+            <span>Next start · <span data-studio="next">Nov 16, 2026</span></span>
+          </span>
+        </aside>
+
+        <div class="onboard__panel" data-onboard data-reveal="expand" style="--d: 100ms">
+          <form novalidate data-endpoint="" aria-labelledby="start-title">
+            <div class="onboard__progress" aria-hidden="true"><i data-progress></i></div>
+
+            <!-- Step 1 -->
+            <fieldset class="fieldset is-current" data-fieldset>
+              <legend class="h3">About you</legend>
+              <div class="fields">
+                <div class="field">
+                  <label for="f-name">Name</label>
+                  <input class="input" id="f-name" name="name" type="text" autocomplete="name" required placeholder="Ana Ruiz">
+                  <span class="field__error" aria-live="polite"></span>
+                </div>
+                <div class="field">
+                  <label for="f-email">Email</label>
+                  <input class="input" id="f-email" name="email" type="email" autocomplete="email" required placeholder="ana@company.com">
+                  <span class="field__error" aria-live="polite"></span>
+                </div>
+                <div class="field">
+                  <label for="f-company">Company <span class="opt">(optional)</span></label>
+                  <input class="input" id="f-company" name="company" type="text" autocomplete="organization" placeholder="Company or brand">
+                </div>
+                <div class="field">
+                  <label for="f-site">Current website <span class="opt">(optional)</span></label>
+                  <input class="input" id="f-site" name="website" type="url" inputmode="url" placeholder="https://">
+                  <span class="field__error" aria-live="polite"></span>
+                </div>
+                <div class="field field--full">
+                  <label for="f-role">Your role</label>
+                  <select class="input" id="f-role" name="role">
+                    <option>Founder</option>
+                    <option>Creative director</option>
+                    <option>Marketing lead</option>
+                    <option>Product lead</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+              </div>
+            </fieldset>
+
+            <!-- Step 2 -->
+            <fieldset class="fieldset" data-fieldset>
+              <legend class="h3">The project</legend>
+              <div class="field">
+                <span class="label" id="l-type">Project type</span>
+                <div class="choice-grid" role="radiogroup" aria-labelledby="l-type">
+                  <label class="choice"><input type="radio" name="type" value="Bespoke static site" checked><span>Bespoke static site<small>4–12 pages</small></span></label>
+                  <label class="choice"><input type="radio" name="type" value="High-converting landing"><span>Landing page<small>Launch · waitlist</small></span></label>
+                  <label class="choice"><input type="radio" name="type" value="UI system"><span>UI system<small>Tokens · components</small></span></label>
+                  <label class="choice"><input type="radio" name="type" value="Not sure yet"><span>Not sure yet<small>Help me scope it</small></span></label>
+                </div>
+              </div>
+              <div class="field">
+                <span class="label" id="l-tier">Tier</span>
+                <div class="choice-grid" role="radiogroup" aria-labelledby="l-tier">
+                  <label class="choice"><input type="radio" name="tier" value="essential"><span>Essential<small>From $4,800</small></span></label>
+                  <label class="choice"><input type="radio" name="tier" value="boutique" checked><span>Boutique<small>From $9,500</small></span></label>
+                  <label class="choice"><input type="radio" name="tier" value="custom"><span>Custom<small>From $16,000</small></span></label>
+                  <label class="choice"><input type="radio" name="tier" value="undecided"><span>Help me choose<small>We'll recommend</small></span></label>
+                </div>
+              </div>
+              <div class="field">
+                <span class="label" id="l-addons">Add-ons <span class="opt">(optional)</span></span>
+                <div class="choice-grid" role="group" aria-labelledby="l-addons">
+                  <label class="choice"><input type="checkbox" name="addons" value="shader"><span>WebGL shader<small>+ $2,400</small></span></label>
+                  <label class="choice"><input type="checkbox" name="addons" value="scroll"><span>Scroll choreography<small>+ $1,800</small></span></label>
+                  <label class="choice"><input type="checkbox" name="addons" value="page"><span>Additional page<small>+ $900</small></span></label>
+                  <label class="choice"><input type="checkbox" name="addons" value="copy"><span>Copywriting<small>+ $1,200</small></span></label>
+                  <label class="choice"><input type="checkbox" name="addons" value="i18n"><span>EN / ES<small>+ $1,100</small></span></label>
+                  <label class="choice"><input type="checkbox" name="addons" value="care"><span>Care plan<small>+ $1,140</small></span></label>
+                </div>
+              </div>
+              <div class="field">
+                <label for="f-brief">What are you building?</label>
+                <textarea class="input" id="f-brief" name="brief" required placeholder="The product, the audience, and what the site needs to achieve."></textarea>
+                <span class="field__error" aria-live="polite"></span>
+              </div>
+            </fieldset>
+
+            <!-- Step 3 -->
+            <fieldset class="fieldset" data-fieldset>
+              <legend class="h3">Budget &amp; timing</legend>
+              <div class="field">
+                <span class="label" id="l-budget">Budget</span>
+                <div class="choice-grid" role="radiogroup" aria-labelledby="l-budget">
+                  <label class="choice"><input type="radio" name="budget" value="$4k–8k"><span>$4k–8k</span></label>
+                  <label class="choice"><input type="radio" name="budget" value="$8k–15k" checked><span>$8k–15k</span></label>
+                  <label class="choice"><input type="radio" name="budget" value="$15k–30k"><span>$15k–30k</span></label>
+                  <label class="choice"><input type="radio" name="budget" value="$30k+"><span>$30k+</span></label>
+                </div>
+              </div>
+              <div class="fields">
+                <div class="field">
+                  <label for="f-launch">Ideal launch</label>
+                  <select class="input" id="f-launch" name="launch">
+                    <option>As soon as possible</option>
+                    <option selected>In 1–2 months</option>
+                    <option>In 3+ months</option>
+                    <option>Flexible</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="f-source">How did you find us? <span class="opt">(optional)</span></label>
+                  <input class="input" id="f-source" name="source" type="text" placeholder="Referral, Instagram, search…">
+                </div>
+              </div>
+              <p class="body-s" style="font-size:0.75rem">We only use these details to reply to your brief. No mailing lists, no sharing.</p>
+            </fieldset>
+
+            <div class="onboard__actions">
+              <button class="btn btn--ghost btn--sm" type="button" data-back hidden>
+                <span class="btn__label">Back</span>
+              </button>
+              <span class="tag" data-step-count>Step 1 of 3</span>
+              <button class="btn btn--solid btn--sm" type="button" data-next data-magnetic="0.15">
+                <span class="btn__label" data-next-label>Continue</span>
+                <span class="btn__icon" aria-hidden="true">
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M10 6 6.5 2.5M10 6 6.5 9.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M10 6 6.5 2.5M10 6 6.5 9.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+              </button>
+            </div>
+          </form>
+
+          <!-- Done state -->
+          <div class="onboard__done" role="status" aria-live="polite">
+            <p class="tag"><span class="status-dot" aria-hidden="true" style="display:inline-block;margin-right:8px"></span>Brief ready</p>
+            <h3 class="h3" data-done-title>Thanks. Here's your brief.</h3>
+            <p class="body-s" data-done-text>Send it to the studio by email and you'll get a written scope, a fixed price and a start date within 48 hours.</p>
+            <pre class="brief" data-brief></pre>
+            <div class="hero__actions">
+              <a class="btn btn--solid btn--sm" href="#" data-send-brief data-magnetic="0.15">
+                <span class="btn__label">Send by email</span>
+                <span class="btn__icon" aria-hidden="true">
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 9L9 3M9 3H4M9 3V8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 9L9 3M9 3H4M9 3V8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+              </a>
+              <button class="btn btn--ghost btn--sm" type="button" data-copy-brief><span class="btn__label">Copy brief</span></button>
+              <button class="btn btn--ghost btn--sm" type="button" data-edit-brief><span class="btn__label">Edit answers</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Case-study modal -->
+  <dialog class="case-modal" data-modal aria-labelledby="modal-title">
+    <div class="case-modal__scroll">
+      <div class="case-modal__bar">
+        <span class="tag" data-modal-count>01 / 06</span>
+        <div class="case-modal__nav">
+          <button class="icon-btn" type="button" data-modal-prev aria-label="Previous case study">
+            <svg width="14" height="14" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M10 6H2M2 6l3.5-3.5M2 6l3.5 3.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <button class="icon-btn" type="button" data-modal-next aria-label="Next case study">
+            <svg width="14" height="14" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 6h8M10 6 6.5 2.5M10 6 6.5 9.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <button class="icon-btn" type="button" data-modal-close aria-label="Close case study">
+            <svg width="14" height="14" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 3l6 6M9 3 3 9" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+          </button>
+        </div>
+      </div>
+      <div data-modal-body></div>
+    </div>
+  </dialog>
+
+  <!-- ===================== FOOTER (shared) ===================== -->
+  <footer class="section site-footer" data-theme="dark">
+    <div class="wrap">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a class="nav__brand" href="index.html" aria-label="Bento Noir — home">
+            <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+            <span>Bento Noir</span>
+          </a>
+          <p>Boutique web design &amp; interface studio. Bespoke static sites, landings and UI systems, built without templates.</p>
+          <span class="tag" style="display:inline-flex;align-items:center;gap:10px">
+            <span class="status-dot" data-live aria-hidden="true"></span>
+            <span data-studio="status-short">Open for projects</span>
+          </span>
+        </div>
+
+        <nav class="footer__col" aria-label="Pages">
+          <h3 class="tag">Pages</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services &amp; Rates</a></li>
+            <li><a href="process.html">Process &amp; Flow</a></li>
+            <li><a href="works.html" aria-current="page">Works &amp; Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__col">
+          <h3 class="tag">Studio</h3>
+          <ul>
+            <li><a href="works.html#start">Start a project</a></li>
+            <li><a href="services.html#rates">Rates</a></li>
+            <li><a href="works.html#faq">FAQ</a></li>
+            <li><a href="#" data-studio="email">hello@bentonoir.studio</a></li>
+          </ul>
+        </div>
+
+        <form class="newsletter" data-newsletter data-endpoint="" novalidate>
+          <h3 class="tag">Newsletter</h3>
+          <p class="body-s">One dispatch a month on type, interaction and performance. No noise.</p>
+          <div class="newsletter__field">
+            <label class="visually-hidden" for="nl-email">Email address</label>
+            <input id="nl-email" type="email" name="email" placeholder="you@studio.com" autocomplete="email" required>
+            <button type="submit" aria-label="Subscribe">
+              <svg width="14" height="14" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 6h8M10 6 6.5 2.5M10 6 6.5 9.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+          <p class="form-note" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <div class="footer__wordmark" aria-hidden="true">Bento Noir</div>
+
+      <div class="footer__legal tag">
+        <span>© <span data-year>2026</span> Bento Noir Studio — Crafted by hand</span>
+        <ul>
+          <!-- TODO: point these at real legal pages -->
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Imprint</a></li>
+          <li><a href="#top">Back to top ↑</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
